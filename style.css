@@ -1,0 +1,81 @@
+/* Apply a dark theme and layout */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between top and bottom content */
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #333; /* Dark background color */
+    color: #f0f0f0; /* Light text color for contrast */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Header styling */
+.page-header {
+    width: 100%; /* Full width */
+    text-align: center; /* Center the heading */
+    padding: 20px; /* Add padding around the heading */
+    background-color: #222; /* Dark background for the header */
+    border-bottom: 1px solid #555; /* Border to separate from the content */
+}
+
+.page-header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for the heading */
+    color: #f0f0f0; /* Light text color */
+}
+
+/* Chat interface at the top, taking most of the space */
+.chat-interface {
+    width: 100%; /* Full width */
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center; /* Center the textarea horizontally */
+    margin: 20px 0; /* Margin from top and bottom */
+}
+
+textarea {
+    width: 80%; /* Adjust width as needed */
+    height: 100%; /* Full height of the container */
+    padding: 10px; /* Add padding inside the textarea */
+    border: 1px solid #555; /* Border color */
+    border-radius: 5px; /* Round the corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 16px; /* Increase font size */
+    background-color: #222; /* Dark background for the textarea */
+    color: #f0f0f0; /* Light text color */
+    resize: none; /* Prevent resizing */
+}
+
+/* Search bar at the bottom */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px; /* Margin from the bottom */
+    width: 100%; /* Full width */
+}
+
+.search-box {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #555; /* Border color */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #222; /* Dark background for the input box */
+    color: #f0f0f0; /* Light text color */
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
